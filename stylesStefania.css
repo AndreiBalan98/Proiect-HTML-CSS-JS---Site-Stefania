@@ -1,0 +1,107 @@
+body{
+
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#navBar{
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#navBar > #nbName{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.75vh;
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+}
+
+#navBar > #nbInstaLogo{
+
+    position: relative;
+    top: -4.25vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    margin: 0vh 1.25vh 0vh auto;
+    background-image: url(./imagesStefania/instaLogo2white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#navBar > #nbHomeLogo{
+
+    opacity: 0;
+    position: relative;
+    top: -7.75vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    margin: 0vh auto 0vh 1vh;
+    background-image: url(./imagesStefania/homeLogo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: opacity 1s linear;
+}
+
+#topBackground{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./imagesStefania/audi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#topBackground > #tbContent{
+
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+}
+
+#topBackground > #tbBottomGradient{
+
+    position: relative;
+    width: 100vw;
+    height: 15vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#tbContent > #tbcText{
+
+    position: relative;
+    top: 32vh;
+}
+
+#tbcText > #tbctTitle{
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 5vh;
+    text-align: center;
+    line-height: 85%;
+}
+
+#tbcText > #tbctContent{
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+#continuare{
+
+    height: 100vh;
+}
