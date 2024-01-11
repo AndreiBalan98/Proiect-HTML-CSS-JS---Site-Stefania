@@ -112,10 +112,11 @@ body{
 #secondPage > #spPhoto{
 
     opacity: 0;
+    float: left;
     width: 40vw;
     height: 25vh;
     /* border: 1px solid black; */
-    margin: 7.5vh auto 7.5vh 2.5vh;
+    margin: 12.5vh auto 7.5vh 2.5vh;
     background-image: url(./imagesStefania/stefania2.jpg);
     background-size: cover;
     background-position: center;
@@ -167,4 +168,23 @@ body{
     /* box-sizing: border-box;
     border: 1px solid red; */
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+#secondPage > #spText{
+
+    opacity: 0;
+    float: right;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    /* text-align: left; */
+    width: 45vw;
+    height: 25vh;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    /* padding: 0.5vw; */
+    margin: 12.5vh 2.5vh 7.5vh auto;
+    transition: opacity 1.5s linear;
 }
