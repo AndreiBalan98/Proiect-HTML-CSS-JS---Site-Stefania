@@ -111,14 +111,17 @@ body{
 
 #secondPage > #spPhoto{
 
+    opacity: 0;
     width: 40vw;
     height: 25vh;
     /* border: 1px solid black; */
-    margin: 7.5vh auto;
-    background-image: url(./imagesStefania/stefania1.jpg);
+    margin: 7.5vh auto 7.5vh 2.5vh;
+    background-image: url(./imagesStefania/stefania2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1); */
+    transition: opacity 2.5s linear;
 }
 
 #spPhoto > #sppTopGradient{

@@ -1,4 +1,5 @@
-const homeLogoScroll = 250;
+const homeLogoScroll = 350;
+const photoScroll = 250;
 
 function homeLogoAppear(){
 
@@ -11,6 +12,14 @@ function homeLogoAppear(){
     }
 }
 
+function photoAppear(){
+
+    let x = document.documentElement.scrollTop;
+    if(x > photoScroll){
+        document.getElementById('spPhoto').style.opacity = 1;
+    }
+}
+
 function homeLogoClick(){
 
     // document.documentElement.scrollTop = 0;
@@ -19,6 +28,9 @@ function homeLogoClick(){
 
 window.onload = function() {
 
-    window.onscroll = function() { homeLogoAppear(); };
     document.getElementById('nbHomeLogo').addEventListener('click', homeLogoClick);
+    window.onscroll = function() {
+        homeLogoAppear();
+        photoAppear();
+    };
 }
