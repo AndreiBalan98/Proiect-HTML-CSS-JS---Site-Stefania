@@ -1,6 +1,21 @@
 const homeLogoScroll = 350;
 const photoAndTextScroll = 250;
 
+function arrowAppear(){
+
+    document.getElementById("tbcArrow").style.opacity = 1;
+}
+
+function arrowDisplayNone(){
+
+    document.getElementById("tbcArrow").style.display = 'none';
+}
+
+function arrowClick(){
+
+    window.scrollBy(0, window.innerHeight); // NU MERGE PE PC
+}
+
 function homeLogoAppear(){
 
     let x = document.documentElement.scrollTop;
@@ -17,6 +32,8 @@ function photoAndTextAppear(){
     let x = document.documentElement.scrollTop;
     if(x > photoAndTextScroll){
         document.getElementById("spPhotoAndText").style.opacity = 1;
+        document.getElementById("tbcArrow").style.opacity = 0;
+        setTimeout(arrowDisplayNone, 1000);
     }
 }
 
@@ -28,6 +45,8 @@ function homeLogoClick(){
 
 window.onload = function() {
 
+    setTimeout(arrowAppear, 2000);
+    document.getElementById("tbcArrow").addEventListener('click', arrowClick);
     document.getElementById('nbHomeLogo').addEventListener('click', homeLogoClick);
     window.onscroll = function() {
         homeLogoAppear();
