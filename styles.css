@@ -109,10 +109,17 @@ body{
     border: 1px solid black; /* TRE SA VAD CU ASTA */
 }
 
-#secondPage > #spPhoto{
+#spPhotoAndText{
 
     opacity: 0;
-    float: left;
+    display: flex;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    transition: opacity 2s linear;
+}
+
+#spPhotoAndText > #spPhoto{
+
     width: 40vw;
     height: 25vh;
     /* border: 1px solid black; */
@@ -122,7 +129,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     /* box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1); */
-    transition: opacity 2.5s linear;
 }
 
 #spPhoto > #sppTopGradient{
@@ -170,10 +176,8 @@ body{
     background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
-#secondPage > #spText{
+#spPhotoAndText > #spText{
 
-    opacity: 0;
-    float: right;
     display: flex;
     align-items: center;
     color: white;
@@ -186,5 +190,4 @@ body{
     /* border: 1px solid red; */
     /* padding: 0.5vw; */
     margin: 12.5vh 2.5vh 7.5vh auto;
-    transition: opacity 1.5s linear;
 }

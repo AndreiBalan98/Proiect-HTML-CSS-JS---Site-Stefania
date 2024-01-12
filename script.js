@@ -16,8 +16,7 @@ function photoAndTextAppear(){
 
     let x = document.documentElement.scrollTop;
     if(x > photoAndTextScroll){
-        document.getElementById('spPhoto').style.opacity = 1;
-        document.getElementById('spText').style.opacity = 1;
+        document.getElementById("spPhotoAndText").style.opacity = 1;
     }
 }
 
