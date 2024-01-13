@@ -13,7 +13,8 @@ function arrowDisplayNone(){
 
 function arrowClick(){
 
-    window.scrollBy(0, window.innerHeight); // NU MERGE PE PC
+    document.getElementById("secondPage").scrollIntoView({ behavior: 'smooth' });
+    console.log("arrow button clicked!");
 }
 
 function homeLogoAppear(){
@@ -46,7 +47,7 @@ function homeLogoClick(){
 window.onload = function() {
 
     setTimeout(arrowAppear, 2000);
-    document.getElementById("tbcArrow").addEventListener('click', arrowClick);
+    document.getElementById('tbcArrow').addEventListener('click', arrowClick);
     document.getElementById('nbHomeLogo').addEventListener('click', homeLogoClick);
     window.onscroll = function() {
         homeLogoAppear();
